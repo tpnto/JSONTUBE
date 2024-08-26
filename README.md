@@ -33,7 +33,7 @@ This program depends on two things for it to work:
 + [YouTube API](https://console.cloud.google.com/marketplace/product/google/youtube.googleapis.com)
 + [Discord Chatlog in JSON format](https://github.com/Tyrrrz/DiscordChatExporter)
 
-
+If for some reason you are having trouble outputting the collected videos, try making a new folder under the name of "uploads".
 ##
-Don't mind the Spanish, I will update that soon :3
+Don't mind the Spanish, I will update that soon. Maybe.
 
