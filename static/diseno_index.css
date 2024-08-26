@@ -1,0 +1,63 @@
+/* este es el diseño de la pagina de mierda*/
+
+body{
+	background-color: #1b1b1c;
+	color:#D8D9DA;
+}
+
+
+/* color de los hypervinculos */
+a{
+	color: #F0ECE5;
+	
+}
+
+/* ID texto */ 
+#texto{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-family:"Consolas";
+	cursor:help;
+	filter: drop-shadow(black 0.25rem 0.25rem 2px); 
+}
+
+
+
+#uptext{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-family:"Lato";
+	filter: drop-shadow(black 0.25rem 0.25rem 2px);
+}
+
+
+
+
+
+/* ID error */ 
+#error{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-family:"Consolas";
+	cursor:help;
+	filter: drop-shadow(black 0.25rem 0.25rem 2px);
+	animation: textanimation 1.5s ease-in-out infinite; 
+}

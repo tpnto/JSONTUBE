@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='diseno_index.css') }}">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>unlistedvids</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div id="error">
+    <p>No hay nada aqui</p>
+</div>
+
+<script>
+    $(document).ready(function() {
+        const noexiste = [
+            "Esta pagina no existe.",
+            "Nunca existio.",
+            "Y nunca va existir."
+        ];
+        
+        let i = 0;
+
+        function ErrorChange() {
+            document.getElementById("error").textContent = noexiste[i];
+            i = (i + 1) % noexiste.length;
+        }
+
+        setInterval(ErrorChange, 3000);
+		
+    });
+	
+	// funcion para hacer el cambio de fonts cada segudno 
+$(document).ready(function (){
+    const fonts = [
+        "Arial",
+        "Cambria",
+        "Candara",
+        "Century",
+        "Lato",
+        "Segoe UI",
+        "Times New Roman",
+        "Georgia"
+    ];
+
+    let i = 0;
+
+    function fontchange() {
+        document.getElementById('error').style.fontFamily = fonts[i];
+        i = (i + 1) % fonts.length;
+    }   
+
+    fontchange();
+    setInterval(fontchange, 200);
+});
+</script>
+
+</body>
+</html>

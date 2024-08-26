@@ -1,0 +1,281 @@
+/* este es el diseño de la pagina de mierda*/
+
+body{
+	background-color: #1b1b1c;
+	font-family:"Arial";
+	font-size:12px;
+	color:#D8D9DA;
+}
+/* Esto controla todos nuestros videos */
+.videoblock{
+	text-align: left;
+}
+
+/* Esto controla toda la caja, dentro de nuestra caja
+   tenemos el video, id, titulo etc.
+*/
+.video {
+	display: inline-block;
+	height: 280px;
+	width: 260px;
+	margin: 3px;
+	vertical-align: top;
+	overflow: hidden;
+	transition: background-color 0.1s ease-in-out;
+	background-color: #272829;
+	border-radius: 2px;
+}
+
+/* Esto controla la miniatura del video */
+.video img{
+    border: none;
+    margin: 0 auto;
+    display: block; 
+	width:240px;
+    height:180px;
+	transition: transform 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* Esto controla el texto p */
+.video p{
+	text-align: left;
+	padding: 5px;
+	margin: 0;
+	position:relative;
+	overflow:hidden;
+}
+
+/* Animacion para nuestra miniatura para
+   q se vea todo lindo :) :D */
+.video img:hover {
+	transform: scale(1.25);
+}
+
+/* Animacion para cada cuadrito para q se 
+   vea lindo cada q le pasan el maose */
+.video:hover{
+	background-color: #4a4f5e;
+}
+
+/* color de los hypervinculos */
+a{
+	color: #F0ECE5;
+	
+}
+
+/* colores del boton, que tan grande es, transparente o no */
+/* y ala mierda esta cosa es estupidamente gigante */
+button.open{
+	
+	width: 1000px;
+	height: 1000px;
+	text-align:center;
+	background-color: #D8D9DA;
+	color: #D8D9DA;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.1s ease-in-out;
+	overflow:hidden;
+	position:relative;
+	bottom:50px;
+	opacity: 0;
+	background-color: #FFF6E0;
+
+}
+
+
+
+/* fondo del menu metadata */
+.pop-outer {
+	background-color: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+
+/* color del menu metadata */
+.pop-inner {
+	background-color: #303030;
+	width: 500px;
+	height: 300px;
+	padding: 25px;
+	margin: 5% auto;
+	border-radius: 8px;
+	filter: drop-shadow(black 1rem 1rem 20px);
+	font-family: Consolas;
+}
+
+
+/* fondo del menu ABOUT */
+.ABOUT-outer {
+	background-color: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+
+/* color del menu ABOUT */
+.ABOUT-inner {
+	background-color: #303030;
+	width: 500px;
+	height: 520px;
+	padding: 25px;
+	margin: 5% auto;
+	border-radius: 8px;
+	filter: drop-shadow(black 1rem 1rem 20px);
+	font-family: Calibri;
+}
+
+.header {
+    position: relative;
+	margin:3px;
+}
+
+/* Boton ABOUT pero es invisible a pero xq tiene tanto hmm wtf lol :) :D XD hola :) */
+.header button.aboutopen {
+    width: 125px;
+    height: 30px; 
+    background-color: #FFF6E0;
+	color: #FFF6E0;
+    border: none;
+    cursor: help;
+    opacity: 1;
+    position: relative;
+	z-index: 2;
+	right:130px;
+	bottom:3.5px;
+	display:inline-block;
+	opacity:0;
+	transition: opacity 0.2s ease-in-out;
+	animation: hanimacion 2s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+	border-radius: 7px;
+}
+
+.botonindex{
+	opacity: 0;
+	position:absolute;
+	right:19px;
+	height:20px;
+	width:45px;
+	top:15px;
+	font-family: "Lato";
+	transition: opacity 0.2s ease-in-out;
+	animation: hanimacion 2s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+	display: inline-block;
+	cursor: pointer;
+	z-index: 2;
+	background-color: #D8D9DA;
+	color: #D8D9DA;
+	border: none;
+	border-radius: 7px;
+	
+}
+
+.botonindex:hover{
+	
+	opacity:0.1;
+}
+
+
+/* JSONTube */
+.header h1 {
+    position: relative;
+    text-align: left;
+    margin: 8px;
+    font-family: "Lato";
+    transition: filter 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    animation: hanimacion 2s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.header p{
+	font-size: 15px;
+}
+
+/* JSONTube animacion cool */
+@keyframes hanimacion {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Boton cambio de opcacidad */
+.header button.aboutopen:hover{
+	opacity: 0.10;
+}
+
+/* mensaje del autor :) */
+.header #mensaje{
+	position:relative;
+	display: inline-block;
+	margin: 2px;
+	left: 10%;
+	bottom:14%;
+	animation: mensajeanimado 1.5s cubic-bezier(0.42, 0, 0.58, 1) infinite;	
+}
+
+/* no puede faltar su animacion */
+@keyframes mensajeanimado {
+    0% {
+        transform: scale(1) rotate(-4deg); 
+		color: #FFF6E0;
+    }
+    50% {
+        transform: scale(1.2) rotate(4deg); 
+		color: #D8D9DA;
+    }
+    100% {
+        transform: scale(1) rotate(-4deg); 
+		color: #FFF6E0;
+    }
+}
+
+/* foto REAL del autor lol */
+.header #fotito {
+    position: relative;
+    border-radius: 10px;
+    animation: fotonimacion 1.5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    display: inline-block;
+	  cursor: grab;
+    margin: 8px;
+	  right: -3%;
+	  filter: drop-shadow(black 1rm 1rm 10px);
+}
+
+/* animado por cierto */
+@keyframes fotonimacion {
+    0% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
+/* se asusta cuando le pasas el punto, asi q cuidado */
+.header #fotito:hover{
+	animation-duration: 0.5s;
+}
+
+
+#mensajito{
+	font-family:"Consolas";
+	margin: 3px;
+}
